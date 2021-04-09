@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework buổi 3</title>
+</head>
+<body>
+   <script>
+       var a;
+       var b;
+        function tim_uoc_chung_lon_nhat(a, b) {
+            while (a != b) {
+               if (a > b) {
+                   a -= b;
+               } else {
+                   b -= a; 
+               } 
+            }
+            return a;
+        }
+         a = prompt("Nhập số a:");
+         b = prompt("Nhập số b:");
+        console.log("ƯỚC chung lớn nhất:" + tim_uoc_chung_lon_nhat(a, b));
+        console.log("Bội số chung nhỏ nhất:" + a*b/tim_uoc_chung_lon_nhat(a, b));
+   </script> 
+</body>
+</html>
